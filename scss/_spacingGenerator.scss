@@ -1,17 +1,17 @@
 $modifiers: (
-    a: '',
-    t: '-top',
-    r: '-right',
-    b: '-bottom',
-    l: '-left'
+  a: '',
+  t: '-top',
+  r: '-right',
+  b: '-bottom',
+  l: '-left'
 );
 
 $pairModifiers: (
-    v: ('-top', '-bottom'),
-    h: ('-right', '-left')
+  h: ('-right', '-left'),
+  v: ('-top', '-bottom')
 );
 
-@mixin generator($prop, $base, $maxValue: 100) {
+@mixin spacingGenerator($prop, $base, $maxValue: 100) {
   @for $i from 1 through $maxValue {
     $z: '';
 
